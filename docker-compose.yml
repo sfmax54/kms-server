@@ -1,4 +1,6 @@
-kms-server:
-  image: teddysun/kms:latest
-  ports:
-    - 1688:1688 
+services:
+  kms-server:
+    image: teddysun/kms:latest
+    ports:
+      - 1688:1688
+    restart: always
